@@ -4,7 +4,7 @@ metadata:
   name: nlb-sample-app
   namespace: nlb-sample-app
 spec:
-  replicas: 2
+  replicas: 5
   selector:
     matchLabels:
       app: nginx
