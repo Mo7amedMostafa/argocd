@@ -4,7 +4,7 @@ metadata:
   name: nlb-sample-app
   namespace: nlb-sample-app
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: nginx
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: public.ecr.aws/nginx/nginx:1.21
+          image: public.ecr.aws/nginx/nginx:latest
           ports:
             - name: tcp
               containerPort: 80
